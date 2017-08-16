@@ -4,15 +4,14 @@ import (
 	"math"
 )
 
+// Bitcoin base58
 var (
-	// Bitcoint base58
 	base58 = []byte{
 		'1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F',
 		'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W',
 		'X', 'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'm',
 		'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'}
 
-	// Base58 symbol chart
 	index = map[byte]int{
 		'1': 0, '2': 1, '3': 2, '4': 3, '5': 4, '6': 5, '7': 6, '8': 7, '9': 8,
 		'A': 9, 'B': 10, 'C': 11, 'D': 12, 'E': 13, 'F': 14, 'G': 15, 'H': 16,
@@ -24,7 +23,7 @@ var (
 		'z': 57}
 )
 
-// Encode an int into base58 bitcoint format
+// Encode an uint into base58 bitcoin format
 func Encode(value uint64) string {
 	if value < 58 {
 		return string(base58[value])

@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/nbari/base58.svg?branch=master)](https://travis-ci.org/nbari/base58)
+[![Coverage Status](https://coveralls.io/repos/github/nbari/base58/badge.svg?branch=master)](https://coveralls.io/github/nbari/base58?branch=master)
+[![Go Report Card](https://goreportcard.com/badge/github.com/nbari/base58)](https://goreportcard.com/report/github.com/nbari/base58)
+
 # base58 encode/decode
 
 base58 using the Bitcoin addresses format:
